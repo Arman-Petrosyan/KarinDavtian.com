@@ -1,0 +1,141 @@
+#filter-items-block {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+.filter-item {
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+    margin-left: 25px;
+}
+
+.filter-item:first-child {
+    margin-left: 0px;
+}
+
+.filter-item a {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    font-family: roboto-bold;
+    color: rgb(154, 154, 154);
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.7s;
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+        -o-transition: 0.7s; 
+}
+
+.filter-item a:hover {
+    color: rgb(154, 154, 154, 0.7);
+}
+
+.filter-item.active a {
+    color: rgb(32, 32, 32);
+}
+
+#footer-block {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media(max-width: 1800px) {
+    #header-block,
+    #product-items-block {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 1180px) {
+    #logo-block {
+        display: block;
+        width: 38px;
+    }
+
+    #logo-block a {
+        display: block;
+    }
+
+    #logo-block a img {
+        display: block;
+    }
+
+    #filter-items-block {
+        display: flex;
+        width: calc(100% - 139.23px);
+        overflow-y: scroll;
+        scrollbar-width: none;
+            -ms-overflow-style: none;
+    }
+
+    #filter-items-block::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media(max-width: 1000px) {
+    #header-block,
+    .page-nav,
+    #product-items-block {
+        margin-top: 20px;
+    }
+
+    #logo-block {
+        width: 34px;
+    }
+}
+
+@media(max-width: 500px) {
+    #logo-block {
+        width: 30px;
+    }
+
+    #product-static-block span {
+        font-size: 12px;
+        margin-top: 4.5px;
+    }
+
+    #product-stick {
+        margin: 0px 15px;
+        top: 2px;
+    }
+
+    #filter-items-block {
+        width: calc(100% - 109.23px);
+    }
+
+    .filter-item {
+        margin-left: 15px;
+    }
+
+    .filter-item a {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 400px) {
+    #product-stick {
+        margin: 0px 15px;
+    }
+
+    #filter-items-block {
+        width: calc(100% - 109.1px);
+    }
+
+    #copyright-block {
+        left: 50%;
+        transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+            -moz-transform: translate(-50%, 0);
+            -webkit-transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+    }
+}

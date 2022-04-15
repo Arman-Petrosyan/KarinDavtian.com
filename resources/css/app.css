@@ -1,0 +1,175 @@
+@font-face {
+    font-family: roboto-black;
+    src: url("/../fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url("/../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: roboto-italic;
+    src: url("/../fonts/Roboto-Italic.ttf");
+}
+
+@font-face {
+    font-family: roboto-medium;
+    src: url("/../fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url("/../fonts/Roboto-Regular.ttf");
+}
+
+* {
+    font-family: roboto-regular;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(246, 246, 246);
+}
+
+a,
+a:active,
+a:focus {
+    outline: none !important;
+    background-color: transparent !important;
+}
+
+a::-moz-focus-inner {
+    border: 0 !important;
+    background-color: transparent !important;
+}
+
+p {
+    line-height: 21px !important;
+}
+
+@media(max-width: 1800px) {
+    p {
+        line-height: 20px !important;
+    }
+}
+
+@media(max-width: 1600px) {
+    p {
+        line-height: 19px !important;
+    }
+}
+
+@media(max-width: 1400px) {
+    p {
+        line-height: 18px !important;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(213, 213, 213); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(32, 32, 32) !important; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(32, 32, 32) !important; 
+}
+
+/* use in all pages */
+
+#header-block {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
+
+#logo-block {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+#logo-block a {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+#logo-block a:hover {
+    opacity: 0.8;
+}
+
+#logo-block a img {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: auto;
+}
+
+@media(max-width: 1550px) {
+    #logo-block a img {
+        width: 40px !important;
+    }
+}
+
+@media(max-width: 1180px) {
+    #logo-block a img {
+        width: 38px !important;
+    }
+}
+
+@media(max-width: 1000px) {
+    #logo-block a img {
+        width: 34px !important;
+    }
+}
+
+@media(max-width: 500px) {
+    #logo-block a img {
+        width: 30px !important;
+    }
+}
+
+/* end */
+
+#footer-block {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+#copyright-block {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+#copyright-block span {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    color: rgb(180, 180, 180);
+}
