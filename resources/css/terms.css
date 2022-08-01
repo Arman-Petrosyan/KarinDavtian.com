@@ -240,6 +240,14 @@
         margin-left: 15px;
     }
 
+    .terms-nav-item.active span {
+        display: none;
+    }
+
+    .terms-nav-item.activeStick span {
+        display: inline-block;
+    }
+
     .terms-text-item-mobile {
         display: none;
     }
@@ -247,6 +255,10 @@
     .terms-text-item p {
         font-size: 12px;
         text-align: justify;
+    }
+
+    .terms-nav-item a:hover {
+        color: rgb(98, 98, 98);
     }
 
     .mobile-term-data {

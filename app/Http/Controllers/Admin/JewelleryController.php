@@ -143,7 +143,7 @@ class JewelleryController extends Controller
     {
         if(!$request->ajax())
             abort(404);
-            
+
         return $jewellery->delete() ? ['action' => 2, 'success' => 1, 'msg' => 'Product deleted successfully.'] : ['action' => 2, 'success' => 0, 'msg' => 'An error has occurred.'];
     }
 }
